@@ -132,14 +132,17 @@ height: 100%;
     margin-top: 7%;
     
 }
-  
 
-    .row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
+
+.row {
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #personalInfo {
     
@@ -322,12 +325,12 @@ border-bottom: 1px solid var(--bg-black-50);
     }
 
 .projects {
+
     margin-top: 6%;
     height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -365,10 +368,7 @@ border-bottom: 1px solid var(--bg-black-50);
     color: #606163;
     line-height: 20px;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .contactt {
     margin-top:25%;
@@ -529,6 +529,8 @@ border-bottom: 1px solid var(--bg-black-50);
 
 
     .row {
+        margin-left: 100px;
+        margin-right: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -721,6 +723,7 @@ border-bottom: 1px solid var(--bg-black-50);
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+      
     }
 
     .katrori {
@@ -921,22 +924,27 @@ border-bottom: 1px solid var(--bg-black-50);
             color: #444242;
         }
 
- 
+
 
     .projects {
+    
         margin-top: 6%;
         height: 100%;
         width: 100%;
         flex-direction: column;
-       
+    }
+    .row {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .row {
-        display: flex;
-        flex-direction:column;
-        width:400px;
     
-    }
+    
 
     .katrori {
         border: 0.5px solid #444242;

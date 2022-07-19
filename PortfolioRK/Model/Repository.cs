@@ -11,10 +11,11 @@ namespace PortfolioRK.Model
         [Key]
         public int RepositoryId { get; set; }
 
+        public String ReloLink { get; set; }
         public String RepoName { get; set; }
 
         public String RepoDescription { get; set; }
 
-        public String Language { get; set; }
+ 
     }
 }

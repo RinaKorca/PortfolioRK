@@ -27,8 +27,8 @@
         <div id="personalInfo">
             <h1>About me</h1>
             <p id="teksti">
-                I am a Software Engineer student located in Kosove.
-                I have a serious passion for developing websites,<br />designing UI/Ux and creating intuitive,
+                I am a Computer Sciences and Engineering student located in Kosove.
+                I have a serious passion for developing software,<br />designing UI/Ux and creating intuitive,
                 dynamic user experiences. <br />Well-organised person, independent, problem solver with high attention to detail.<br />
                 Interested in the entire backend spectrum.
             </p>
@@ -81,67 +81,26 @@
     </div>
     <div class="projects">
 
+
         <div class="row">
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/RinaKorca/PortfolioRK">PortfolioRK</a>
-                </div>
-                <p>This is a project that shows information about me, includin what I study,
-                what programming skills I have adn the projects I have worked on. Teknologies used are: HTML/CSS & .NET</p>
-            </div>
+            @foreach (var item in Model.Repositories)
+            {
+              
 
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/DoruntinaKorca/movieapplication">Movie Application</a>
-                </div>
-                <p>This projects is web-based. You can register and have your own account to watch movies of different genres. It was developed with ReactJS and .NET</p>
 
-            </div>
+                    <div class="katrori">
+                        <div class="linkuProj">
+                            <a class="aa" href="@Html.DisplayFor(l=>item.ReloLink)">@Html.DisplayFor(l => item.RepoName)</a>
+                        </div>
+                        <p>
+                            @Html.DisplayFor(l => item.RepoDescription)
+                        </p>
+                    </div>
 
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/RinaKorca/simpleRestAPI">Simple Rest Api</a>
-                </div>
-                <p>Simple Rest Api with flask and MongoDB.</p>
 
-            </div>
+             
+            }
         </div>
-
-        <div class="row">
-
-
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/DoruntinaKorca/TechScope">TechScope</a>
-                </div>
-                <p>TechScope Learning Platform is a new and innovative web-based project that aims to improve the experience of individuals that want to perfect their skills in tech-related fields by offering online courses. </p>
-
-
-            </div>
-
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/DoruntinaKorca/InxhinieriEWeb-it">Desserts</a>
-                </div>
-                <p>This project offers the opportunity to order different kinds of desserts online. It was developed with HTML/CSS & Javascript & PHP.</p>
-
-
-            </div>
-            <div class="katrori">
-                <div class="linkuProj">
-                    <a class="aa" href="https://github.com/RinaKorca/myportofolio">My Portfolio</a>
-                </div>
-                <p>Another simple portfolio developed with HTML/CSS.</p>
-
-
-            </div>
-            </div>
-
-
-
-
-
-
 
         </div>
 </section>
